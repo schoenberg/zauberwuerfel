@@ -1,0 +1,23 @@
+{
+  "actionsIdCache": {
+    "m1_LeadScript01_push1:click": "action0",
+    "m1_LeadScript01_textField1:change": "action1",
+    "m1_LeadScript011_textField2:change": "action2",
+    "m1_LeadScript011_push2:click": "action3",
+    "m1_LeadScript02_push2:click": "action4",
+    "m1_LeadScript02_next1:click": "action5",
+    "m1_LeadScript01_image2:click": "action6",
+    "m1_LeadScript01_push2:click": "action7",
+    "m1_LeadScript03_push1:click": "action8",
+    "m1_LeadScript03_push2:click": "action9",
+    "m1_ForexChart01_hidden_select_combobox1:change": "action10",
+    "m1_ForexChart01_next1:click": "action11",
+    "m1_ForexChart01s2_back1:click": "action12",
+    "m1_ForexChart01s2_hidden_select_combobox1:change": "action13",
+    "m1_ForexChart01s2_hidden_select_combobox2:change": "action14",
+    "m1_ForexChart01s2_next1:click": "action15",
+    "m1_ForexChart01_next1a:click": "action16",
+    "m1_ForexChart01s2_next1c:click": "action17"
+  },
+  "splashScreenHashes": {}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>ForexChart01</title>
+    <meta name="generator" content=
+      "MobiOne Studio - Design Center (2.6.2.201408151938), http://genuitec.com/mobile"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content=
+      "minimal-ui, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="ForexChart01.css"/>
+    <link rel="stylesheet" href="res/spinningwheel.css"/>
+    <script type="text/javascript" src="rte/cordova.js"></script>
+    <script type="text/javascript" src="rte/rte.js"></script>
+    <script type="text/javascript" src="res/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="res/iscroll.js"></script>
+    <script type="text/javascript" src="ForexChart01.js"></script>
+    <script type="text/javascript" src="res/phoneui.js"></script>
+    <script type="text/javascript" src="res/spinningwheel.js"></script>
+    <script type="text/javascript" src="ForexChart01_custom.js"></script>
+  </head>
+  <body>
+    <div class="m1-top-root">
+      <!-- Loading spinner  -->
+      <div class="m1-loading">
+        <div>
+          <canvas class="m1-loading-spinner" width="25" height="25"></canvas>
+          <span class="m1-loading-text"></span>
+        </div>
+      </div>
+      <!-- Prompt to be shown for adding page on homescreen  -->
+      <canvas class="m1-homescreen-prompt" width="250" height="120"></canvas>
+      <!-- ***** ForexChart01 *****  -->
+      <div id="m1-ForexChart01" class="m1-root m1-background-1">
+        <div id="m1-ForexChart01-panel1" class="m1-iscroll-wrapper m1-border-1 m1-background-2">
+          <div id="m1-ForexChart01-panel1-scroller" class="m1-iscroll-scroller" data-bounce="true">
+            </div>
+        </div>
+        <div id="m1-ForexChart01-html1" class="m1-custom-html m1-background-2 m1-border-2"
+          ><script type="text/javascript">
+
+function Fensterweite () {
+  if (window.innerWidth) {
+    return window.innerWidth;
+  } else if (document.body && document.body.offsetWidth) {
+    return document.body.offsetWidth;
+  } else {
+    return 0;
+  }
+}
+
+function Fensterhoehe () {
+  if (window.innerHeight) {
+    return window.innerHeight;
+  } else if (document.body && document.body.offsetHeight) {
+    return document.body.offsetHeight;
+  } else {
+    return 0;
+  }
+}
+
+function neuAufbau () {
+  if (Weite != Fensterweite() || Hoehe != Fensterhoehe())
+    location.href = location.href;
+}
+
+/* Überwachung von Netscape initialisieren */
+if (!window.Weite && window.innerWidth) {
+  window.onresize = neuAufbau;
+  Weite = Fensterweite();
+  Hoehe = Fensterhoehe();
+}
+</script>
+
+<script type="text/javascript">
+/* Überwachung von Internet Explorer initialisieren */
+if (!window.Weite && document.body && document.body.offsetWidth) {
+  window.onresize = neuAufbau;
+  Weite = Fensterweite();
+  Hoehe = Fensterhoehe();
+}
+</script>
+
+<script type="text/javascript">
+  window.onresize = neuAufbau;
+
+  document.write('<iframe width="' + Weite + '" height="' + Hoehe + '" name=if1 id=if1 src=http://3lancer.biz/zauberwuerfel_smartphone scrolling=no frameborder=no></iframe>'); 
+</script></div>
+      </div>
+    </div>
+  </body>
+</html>

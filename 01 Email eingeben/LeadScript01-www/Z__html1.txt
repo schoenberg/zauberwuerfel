@@ -1,0 +1,68 @@
+<script>
+function Weiterleitung(Erg)
+{
+ if(Erg==216549752)
+ {
+  var obj=document.getElementById("m1-LeadScript01-image2");
+  if(document.createEvent && obj.dispatchEvent)
+  {
+    var evt=document.createEvent("MouseEvents");
+    if(evt && evt.initMouseEvent)evt.initMouseEvent("click",true,true,document.defaultView,1,0,0,0,0,false,false,false,false,0,null);
+    obj.dispatchEvent(evt);
+  }
+ }
+}
+</script>
+
+<script>
+var Erg = localStorage.getItem('LizenzApp001a');
+
+/* for Safari */
+if (/WebKit/i.test(navigator.userAgent)) { 
+  var _timer = setInterval(function() {
+    if (/loaded|complete/.test(document.readyState)) {
+      Weiterleitung(Erg);
+    }
+  }, 10);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+___________________________________________________________
+/* for Mozilla/Opera9 */
+if (document.addEventListener) {
+  document.addEventListener("DOMContentLoaded", init, false);
+}
+
+/* for Internet Explorer */
+/*@cc_on @*/
+/*@if (@_win32)
+  document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+  var script = document.getElementById("__ie_onload");
+  script.onreadystatechange = function() {
+    if (this.readyState == "complete") {
+      init(); // call the onload handler
+    }
+  };
+/*@end @*/
+
+/* for Safari */
+if (/WebKit/i.test(navigator.userAgent)) { // sniff
+  var _timer = setInterval(function() {
+    if (/loaded|complete/.test(document.readyState)) {
+      init(); // call the onload handler
+    }
+  }, 10);
+}
+
+/* for other browsers */
+window.onload = init;
+ 

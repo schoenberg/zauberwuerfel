@@ -1,0 +1,12 @@
+{
+  "actionsIdCache": {
+    "m1_ForexChart01_hidden_select_combobox1:change": "action0",
+    "m1_ForexChart01_next1:click": "action1",
+    "m1_ForexChart01s2_back1:click": "action2",
+    "m1_ForexChart01s2_hidden_select_combobox1:change": "action3",
+    "m1_ForexChart01s2_hidden_select_combobox2:change": "action4",
+    "m1_ForexChart01s2_next1:click": "action5",
+    "m1_ForexChart01_next1a:click": "action6"
+  },
+  "splashScreenHashes": {}
+}
